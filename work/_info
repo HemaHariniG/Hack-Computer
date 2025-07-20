@@ -9,57 +9,257 @@ z2
 cModel Technology
 dD:/
 vand16
-!s110 1752350847
+Z0 !s110 1752676389
 !i10b 1
 !s100 =bK?lkQXM2TAoU7EXfB@V3
 Io@;;VC_3QEmZ629TKbanN2
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dD:/NandToTetris
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/NandToTetris
 w1752350729
 8gates/and16.v
 Fgates/and16.v
 L0 2
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1752350847.000000
-!s107 gates/and16.v|
-!s90 -reportprogress|300|gates/and16.v|
+Z4 !s108 1752676389.000000
+Z5 !s107 testbenches/tb_mux8way16.v|gates/or_gate.v|gates/or8way.v|gates/or16.v|gates/not_gate.v|gates/not16.v|gates/nand_gate.v|gates/mux_gate.v|gates/mux8way16.v|gates/mux4way16.v|gates/mux16.v|gates/and_gate.v|gates/and16.v|
+Z6 !s90 -reportprogress|300|gates/and16.v|gates/and_gate.v|gates/mux16.v|gates/mux4way16.v|gates/mux8way16.v|gates/mux_gate.v|gates/nand_gate.v|gates/not16.v|gates/not_gate.v|gates/or16.v|gates/or8way.v|gates/or_gate.v|testbenches/tb_mux8way16.v|
 !i113 1
-Z3 tCvgOpt 0
+Z7 tCvgOpt 0
+vand_gate
+R0
+!i10b 1
+!s100 FIC1TYCbjWfAcjLiYZPHT2
+IehL`gDZia0CPAFC2VbjEB0
+R1
+R2
+w1752672048
+8gates/and_gate.v
+Fgates/and_gate.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vmux16
+R0
+!i10b 1
+!s100 NIH2K622Y]>DZbdgYkW;21
+I^<2_]?Fh]L[<<iQ9a5TZ]3
+R1
+R2
+w1752673911
+8gates/mux16.v
+Fgates/mux16.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vmux4way16
+R0
+!i10b 1
+!s100 LhXb@;FA7M^Z4U[QUN3i32
+IWlXLlDBlGVh6Nj:75X7Q92
+R1
+R2
+w1752675799
+8gates/mux4way16.v
+Fgates/mux4way16.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vmux8way16
+R0
+!i10b 1
+!s100 EgFPoZQ=22693SC9jB_lk3
+I2H?kg6U1cKnYH?mnL7[8m1
+R1
+R2
+w1752676320
+8gates/mux8way16.v
+Fgates/mux8way16.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vmux_gate
+R0
+!i10b 1
+!s100 BlDEYLWo4EH_:O<cLFMLF0
+IQWgKGz6HQiU@^_NHZNT0?2
+R1
+R2
+w1752673296
+8gates/mux_gate.v
+Fgates/mux_gate.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vnand_gate
+R0
+!i10b 1
+!s100 e9`HJ34nF:VQJ02z7=:TJ1
+I0gg;^Fm[:Rhn0cj`Q0z[?0
+R1
+R2
+w1752672045
+8gates/nand_gate.v
+Fgates/nand_gate.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
 vnot16
-Z4 !s110 1752350581
+R0
 !i10b 1
 !s100 G[_no>BAXGRLZ]NFQ<@RN2
 I17W_Y;8PS4Dg0MkiW5^W;1
-R0
 R1
+R2
 w1751601767
 8gates/not16.v
 Fgates/not16.v
 L0 2
-R2
+R3
 r1
 !s85 0
 31
-Z5 !s108 1752350581.000000
-Z6 !s107 testbenches/tb_not16.v|gates/not16.v|
-Z7 !s90 -reportprogress|300|gates/not16.v|testbenches/tb_not16.v|
+R4
+R5
+R6
 !i113 1
+R7
+vnot_gate
+R0
+!i10b 1
+!s100 o_FeM]j==I9X<37=VS[mY2
+IV[ZnCMPk4g`5zQ<lDRMaA0
+R1
+R2
+w1752672043
+8gates/not_gate.v
+Fgates/not_gate.v
+L0 2
 R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vor16
+R0
+!i10b 1
+!s100 c_cJU2Ff20gH68K5bX@ch1
+IhJB6Bc=IKKJ:j[?8LHaC>3
+R1
+R2
+w1752672034
+8gates/or16.v
+Fgates/or16.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vor8way
+R0
+!i10b 1
+!s100 aoHSFoD0OF25W@3meFE<70
+Iha`FFTa^AC9Q]Fd7TgiBE3
+R1
+R2
+w1752674579
+8gates/or8way.v
+Fgates/or8way.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vor_gate
+R0
+!i10b 1
+!s100 _Xem6JTS;QjXQ3NJXnYg72
+I=C7AFPImllWj6@S]CUQzN0
+R1
+R2
+w1752672038
+8gates/or_gate.v
+Fgates/or_gate.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
 vtb_and16
 !s110 1752350876
 !i10b 1
 !s100 7[ozFDm[hl:FL?`2CXEWi2
 INXl[MAgY;]b_DVa3i92mJ1
-R0
 R1
+R2
 w1752350726
 8testbenches/tb_and16.v
 Ftestbenches/tb_and16.v
 L0 2
-R2
+R3
 r1
 !s85 0
 31
@@ -67,24 +267,124 @@ r1
 !s107 testbenches/tb_and16.v|
 !s90 -reportprogress|300|testbenches/tb_and16.v|
 !i113 1
+R7
+vtb_mux16
+!s110 1752673925
+!i10b 1
+!s100 UTXBHIlI^X?R2;j4AOBl>2
+I;J;]hf2Eeja921_XFR3WH2
+R1
+R2
+w1752673376
+8testbenches/tb_mux16.v
+Ftestbenches/tb_mux16.v
+L0 2
 R3
-vtb_not16
+r1
+!s85 0
+31
+!s108 1752673925.000000
+!s107 testbenches/tb_mux16.v|gates/mux16.v|gates/mux_gate.v|gates/or_gate.v|gates/and_gate.v|gates/not_gate.v|gates/nand_gate.v|
+!s90 -reportprogress|300|gates/nand_gate.v|gates/not_gate.v|gates/and_gate.v|gates/or_gate.v|gates/mux_gate.v|gates/mux16.v|testbenches/tb_mux16.v|
+!i113 1
+R7
+vtb_mux4way16
+!s110 1752675885
+!i10b 1
+!s100 PdoW]a@1G;RT5SKU=E0l62
+IoD`<nSW>zDdZdUWG?T`0S0
+R1
+R2
+w1752675832
+8testbenches/tb_mux4way16.v
+Ftestbenches/tb_mux4way16.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1752675885.000000
+!s107 testbenches/tb_mux4way16.v|gates/mux4way16.v|gates/mux16.v|gates/mux_gate.v|gates/or_gate.v|gates/and_gate.v|gates/not_gate.v|gates/nand_gate.v|
+!s90 -reportprogress|300|gates/nand_gate.v|gates/not_gate.v|gates/and_gate.v|gates/or_gate.v|gates/mux_gate.v|gates/mux16.v|gates/mux4way16.v|testbenches/tb_mux4way16.v|
+!i113 1
+R7
+vtb_mux8way16
+R0
+!i10b 1
+!s100 ;KJS4gSZ6IVOG2C_1UnO30
+Ibi<;55;Y4Fjf;OjW]gb]33
+R1
+R2
+w1752676345
+8testbenches/tb_mux8way16.v
+Ftestbenches/tb_mux8way16.v
+L0 2
+R3
+r1
+!s85 0
+31
 R4
+R5
+R6
+!i113 1
+R7
+vtb_not16
+!s110 1752350581
 !i10b 1
 !s100 _7?D>`46Wjo;O2J7X5HWl2
 I4:dO]>>0=Z;P5`jA6[[OL0
-R0
 R1
+R2
 w1751601803
 8testbenches/tb_not16.v
 Ftestbenches/tb_not16.v
 L0 2
-R2
+R3
 r1
 !s85 0
 31
-R5
-R6
-R7
+!s108 1752350581.000000
+!s107 testbenches/tb_not16.v|gates/not16.v|
+!s90 -reportprogress|300|gates/not16.v|testbenches/tb_not16.v|
 !i113 1
+R7
+vtb_or16
+!s110 1752672133
+!i10b 1
+!s100 C:3Emf_VYa5?a7dAF:?M:0
+IO_@[HAiASa5zJ8WX5l79V0
+R1
+R2
+w1752672081
+8testbenches/tb_or16.v
+Ftestbenches/tb_or16.v
+L0 2
 R3
+r1
+!s85 0
+31
+!s108 1752672133.000000
+!s107 testbenches/tb_or16.v|gates/or16.v|gates/or_gate.v|gates/and_gate.v|gates/not_gate.v|gates/nand_gate.v|
+!s90 -reportprogress|300|gates/nand_gate.v|gates/not_gate.v|gates/and_gate.v|gates/or_gate.v|gates/or16.v|testbenches/tb_or16.v|
+!i113 1
+R7
+vtb_or8way
+!s110 1752674677
+!i10b 1
+!s100 8_?0SnFSR6z4f_7GK3aWA2
+IMk8h]e=2]M>;YHd]ARFeh3
+R1
+R2
+w1752674610
+8testbenches/tb_or8way.v
+Ftestbenches/tb_or8way.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1752674677.000000
+!s107 testbenches/tb_or8way.v|gates/or8way.v|gates/or_gate.v|gates/and_gate.v|gates/not_gate.v|gates/nand_gate.v|
+!s90 -reportprogress|300|gates/nand_gate.v|gates/not_gate.v|gates/and_gate.v|gates/or_gate.v|gates/or8way.v|testbenches/tb_or8way.v|
+!i113 1
+R7
