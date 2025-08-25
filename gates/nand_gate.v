@@ -1,8 +1,7 @@
 `default_nettype none
-module nand_gate(
-    input wire a,
-    input wire b,
-    output wire y
-);
-    assign y = ~(a & b);
+module nand_gate(a, b, out);
+    input a, b;
+    output out;
+
+    assign out = ~(a & b);
 endmodule

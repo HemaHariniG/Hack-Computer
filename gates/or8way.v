@@ -1,17 +1,16 @@
 `default_nettype none
-module or8way(
-    input  wire [7:0] a,
-    output wire y
-);
+module or8way(in, out);
+    input [7:0] in;
+    output out;
+
     wire o1, o2, o3, o4, o5, o6, o7;
 
-    or_gate u1 (.a(a[0]), .b(a[1]), .y(o1));
-    or_gate u2 (.a(a[2]), .b(a[3]), .y(o2));
-    or_gate u3 (.a(a[4]), .b(a[5]), .y(o3));
-    or_gate u4 (.a(a[6]), .b(a[7]), .y(o4));
-
-    or_gate u5 (.a(o1), .b(o2), .y(o5));
-    or_gate u6 (.a(o3), .b(o4), .y(o6));
-
-    or_gate u7 (.a(o5), .b(o6), .y(y));
+    or_gate or1(in[0], in[1], o1);
+    or_gate or2(o1, in[2], o2);
+    or_gate or3(o2, in[3], o3);
+    or_gate or4(o3, in[4], o4);
+    or_gate or5(o4, in[5], o5);
+    or_gate or6(o5, in[6], o6);
+    or_gate or7(o6, in[7], out);
 endmodule
+

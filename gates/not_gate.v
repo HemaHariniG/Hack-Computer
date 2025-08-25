@@ -1,7 +1,8 @@
 `default_nettype none
-module not_gate(
-    input wire a,
-    output wire y
-);
-    nand_gate u1 (.a(a), .b(a), .y(y));
+module not_gate(in, out);
+    input in;
+    output out;
+
+    nand_gate nand1(in, in, out);
 endmodule
+

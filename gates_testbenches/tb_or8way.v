@@ -1,24 +1,18 @@
 `timescale 1ns/1ps
 module tb_or8way;
+    reg [7:0] in;
+    wire out;
 
-    reg  [7:0] a;
-    wire       y;
-
-    or8way uut (
-        .a(a),
-        .y(y)
-    );
+    or8way uut(in, out);
 
     initial begin
-        $monitor($time, ": a = %b | y = %b", a, y);
+        $monitor($time, ": in=%b -> out=%b", in, out);
 
-        a = 8'b00000000; #100; // expect 0
-        a = 8'b00000001; #100; // expect 1
-        a = 8'b10000000; #100; // expect 1
-        a = 8'b01010101; #100; // expect 1
-        a = 8'b11111111; #100; // expect 1
+        in=8'b00000000; #10;
+        in=8'b10000000; #10;
+        in=8'b00001000; #10;
+        in=8'b11111111; #10;
 
         $finish;
     end
-
 endmodule

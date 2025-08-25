@@ -1,27 +1,11 @@
-`default_nettype none
-module mux8way16(
-    input  wire [15:0] a, b, c, d, e, f, g, h,
-    input  wire [2:0]  sel,
-    output wire [15:0] y
-);
-    wire [15:0] upper_mux, lower_mux;
+module mux8way16(a, b, c, d, e, f, g, h, sel, out);
+    input [15:0] a, b, c, d, e, f, g, h;
+    input [2:0] sel;
+    output [15:0] out;
 
-    mux4way16 lower (
-        .a(a), .b(b), .c(c), .d(d),
-        .sel(sel[1:0]),
-        .y(lower_mux)
-    );
+    wire [15:0] m1, m2;
 
-    mux4way16 upper (
-        .a(e), .b(f), .c(g), .d(h),
-        .sel(sel[1:0]),
-        .y(upper_mux)
-    );
-
-    mux16 final_mux (
-        .a(lower_mux),
-        .b(upper_mux),
-        .sel(sel[2]),
-        .y(y)
-    );
+    mux4way16 m4a(a, b, c, d, sel[1:0], m1);
+    mux4way16 m4b(e, f, g, h, sel[1:0], m2);
+    mux16     m8(m1, m2, sel[2], out);
 endmodule

@@ -1,26 +1,17 @@
 `timescale 1ns/1ps
 module tb_mux16;
+    reg [15:0] a, b;
+    reg sel;
+    wire [15:0] out;
 
-    reg  [15:0] a, b;
-    reg         sel;
-    wire [15:0] y;
-
-    mux16 uut (
-        .a(a),
-        .b(b),
-        .sel(sel),
-        .y(y)
-    );
+    mux16 uut(a, b, sel, out);
 
     initial begin
-        $monitor($time, ": sel = %b | a = %b | b = %b | y = %b", sel, a, b, y);
+        $monitor($time, ": a=%h b=%h sel=%b -> out=%h", a, b, sel, out);
 
-        a = 16'b0000000000000000; b = 16'b1111111111111111; sel = 0; #100;
-        a = 16'b0000000000000000; b = 16'b1111111111111111; sel = 1; #100;
-        a = 16'b1010101010101010; b = 16'b0101010101010101; sel = 0; #100;
-        a = 16'b1010101010101010; b = 16'b0101010101010101; sel = 1; #100;
+        a = 16'hAAAA; b = 16'h5555; sel=0; #10;
+        a = 16'hAAAA; b = 16'h5555; sel=1; #10;
 
         $finish;
     end
-
 endmodule

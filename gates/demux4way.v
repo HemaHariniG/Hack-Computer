@@ -1,29 +1,12 @@
-`default_nettype none
-module dmux4way(
-    input  wire in,
-    input  wire [1:0] sel,
-    output wire a, b, c, d
-);
-    wire upper, lower;
+module dmux4way(in, sel, a, b, c, d);
+    input in;
+    input [1:0] sel;
+    output a, b, c, d;
 
-    dmux level1 (
-        .in(in),
-        .sel(sel[1]),
-        .a(upper),
-        .b(lower)
-    );
+    wire w1, w2;
 
-    dmux level2_upper (
-        .in(upper),
-        .sel(sel[0]),
-        .a(a),
-        .b(b)
-    );
-
-    dmux level2_lower (
-        .in(lower),
-        .sel(sel[0]),
-        .a(c),
-        .b(d)
-    );
+    dmux d1(in, sel[1], w1, w2);
+    dmux d2(w1, sel[0], a, b);
+    dmux d3(w2, sel[0], c, d);
 endmodule
+
