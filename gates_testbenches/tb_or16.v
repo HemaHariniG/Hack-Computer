@@ -1,24 +1,18 @@
 `timescale 1ns/1ps
 module tb_or16;
-
     reg  [15:0] a, b;
-    wire [15:0] y;
+    wire [15:0] out;
 
-    or16 uut (
-        .a(a),
-        .b(b),
-        .y(y)
-    );
+    or16 uut(a, b, out);
 
     initial begin
-        $monitor($time, ": a = %b | b = %b | y = %b", a, b, y);
+        $monitor($time, " a=%h b=%h -> out=%h", a, b, out);
 
-        a = 16'b0000000000000000; b = 16'b1111111111111111; #100;
-        a = 16'b1010101010101010; b = 16'b0101010101010101; #100;
-        a = 16'b0000000000000000; b = 16'b0000000000000000; #100;
-        a = 16'b1111111111111111; b = 16'b1111111111111111; #100;
+        a=16'h0000; b=16'h0000; #10;
+        a=16'h0000; b=16'hFFFF; #10;
+        a=16'hAAAA; b=16'h5555; #10;
+        a=16'hF0F0; b=16'h0FF0; #10;
 
         $finish;
     end
-
 endmodule

@@ -1,13 +1,11 @@
-`default_nettype none
-module or16(
-    input  wire [15:0] a,
-    input  wire [15:0] b,
-    output wire [15:0] y
-);
-    genvar i;
-    generate
-        for (i = 0; i < 16; i = i + 1) begin : or_loop
-            or_gate u (.a(a[i]), .b(b[i]), .y(y[i]));
-        end
-    endgenerate
+module or16(a, b, out);
+    input  [15:0] a, b;
+    output [15:0] out;
+
+    wire [15:0] nota, notb, and_out;
+
+    not16 u1(a, nota);
+    not16 u2(b, notb);
+    and16 u3(nota, notb, and_out);
+    not16 u4(and_out, out);
 endmodule
