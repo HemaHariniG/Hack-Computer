@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 module or8way(in, out);
     input [7:0] in;
     output out;

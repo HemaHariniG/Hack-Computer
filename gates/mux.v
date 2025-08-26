@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 module mux(a, b, sel, out);
     input a, b, sel;
     output out;

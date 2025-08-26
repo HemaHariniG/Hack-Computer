@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 module not_gate(in, out);
     input in;
     output out;
