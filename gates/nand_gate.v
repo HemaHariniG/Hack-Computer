@@ -1,4 +1,3 @@
-//`default_nettype none
 module nand_gate(a, b, out);
     input a, b;
     output out;
