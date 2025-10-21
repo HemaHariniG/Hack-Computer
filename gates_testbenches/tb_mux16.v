@@ -8,8 +8,8 @@ module tb_mux16;
     
     initial begin
         $display("Testing MUX16 Gate");
-       $display("Time\ta\t\tb\t\tsel\tout");
-       $display("----\t----\t----\t---\t----");
+       $display("Time\ta\tb\tsel\tout");
+       $monitor("%4t\t%h\t%h\t%b\t%h",$time,a,b,sel,out);
         
         a = 16'h1234; b = 16'hABCD; sel = 0; #10;
         a = 16'h1234; b = 16'hABCD; sel = 1; #10;

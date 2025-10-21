@@ -7,7 +7,7 @@ module tb_and16;
     
     initial begin
         $display("Testing AND16 Gate");
-        $display("Time\ta\t\tb\t\tout");
+        $display("Time\ta\tb\tout");
         $monitor("%4t\t%h\t%h\t%h", $time, a, b, out);
         
         a = 16'h0000; b = 16'h0000; #10;
