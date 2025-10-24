@@ -3,6 +3,7 @@ module xor_gate(a, b, out);
     output out;
     
     wire not_a, not_b, and1_out, and2_out;
+    
     not_gate not1(a, not_a);
     not_gate not2(b, not_b);
     and_gate and1(a, not_b, and1_out);
